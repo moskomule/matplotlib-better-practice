@@ -37,3 +37,20 @@ ax.add_patch(Circle((0, 0), # center
                     facecolor='none', edgecolor="gray", linestyle="dashed", linewidth=2, alpha=0.5)
 )
 ```
+
+## Figure in Figure
+
+
+```python
+# add a child ax in a parent ax
+ax.plot(...)
+
+axins = ax.inset_axes([0.6, 0.15, 0.32, 0.6])
+axins.plot(...)
+axins.set_xlim(...)
+axins.set_ylim(...)
+# with zoom
+ax.indicate_inset_zoom(axins)
+```
+
+[da_effect.pdf](https://github.com/moskomule/matplotlib-better-practice/files/14075076/da_effect.pdf)
