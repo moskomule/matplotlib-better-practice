@@ -53,4 +53,5 @@ axins.set_ylim(...)
 ax.indicate_inset_zoom(axins)
 ```
 
-[da_effect.pdf](https://github.com/moskomule/matplotlib-better-practice/files/14075076/da_effect.pdf)
+
+![da_effect](https://github.com/moskomule/matplotlib-better-practice/assets/11806234/f2ffb602-311e-4f25-ade1-b9cc6d4de2a5)
