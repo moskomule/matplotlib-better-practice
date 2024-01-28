@@ -33,7 +33,7 @@ fig.tight_layout()
 from matplotlib.patches import Circle
 
 ax.add_patch(Circle((0, 0), # center
-             1, # radius
-             facecolor='none', edgecolor="gray", linestyle="dashed", linewidth=2, alpha=0.5)
+                    1, # radius
+                    facecolor='none', edgecolor="gray", linestyle="dashed", linewidth=2, alpha=0.5)
 )
 ```
