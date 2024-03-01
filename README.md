@@ -72,8 +72,9 @@ for gs, indices in zip(nest_gses, [a, b, c]):
     _scatter_hist(points, points[indices], ax, ax_histx, ax_histy)
 
 fig.tight_layout()
-
 ```
+
+See [this](https://matplotlib.org/stable/gallery/lines_bars_and_markers/scatter_hist.html#sphx-glr-gallery-lines-bars-and-markers-scatter-hist-py) for `_scatter_hist`
 
 ![image](https://github.com/moskomule/matplotlib-better-practice/assets/11806234/a85620b8-2dfd-49a9-a34e-d1adf0a2264c)
 
