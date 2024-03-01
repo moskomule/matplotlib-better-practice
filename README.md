@@ -55,3 +55,24 @@ ax.indicate_inset_zoom(axins)
 
 
 ![da_effect](https://github.com/moskomule/matplotlib-better-practice/assets/11806234/f2ffb602-311e-4f25-ade1-b9cc6d4de2a5)
+
+
+## Nested Figure
+
+```python
+fig = plt.figure(figsize=(12, 4))
+gs_base = GridSpec(1, 3)
+nest_gses = [GridSpecFromSubplotSpec(2, 2, width_ratios=(4, 1), height_ratios=(1, 4),
+                      wspace=0.05, hspace=0.05, subplot_spec=gs_base[i]) for i in range(3)]
+
+for gs, indices in zip(nest_gses, [a, b, c]):
+    ax = fig.add_subplot(gs[1, 0])
+    ax_histx = fig.add_subplot(gs[0, 0], sharex=ax)
+    ax_histy = fig.add_subplot(gs[1, 1], sharey=ax)
+    _scatter_hist(points, points[indices], ax, ax_histx, ax_histy)
+
+fig.tight_layout()
+
+```
+
+![image](https://github.com/moskomule/matplotlib-better-practice/assets/11806234/7ad33490-ac44-4b9f-9e2d-4513b8ef0503)
