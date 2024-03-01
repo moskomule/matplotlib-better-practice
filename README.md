@@ -75,4 +75,5 @@ fig.tight_layout()
 
 ```
 
-![image](https://github.com/moskomule/matplotlib-better-practice/assets/11806234/7ad33490-ac44-4b9f-9e2d-4513b8ef0503)
+![image](https://github.com/moskomule/matplotlib-better-practice/assets/11806234/a85620b8-2dfd-49a9-a34e-d1adf0a2264c)
+
